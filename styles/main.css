@@ -1,0 +1,94 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#navbar {
+    background-color: rgba(123, 123, 123, 0.75);
+    width: 100vw;
+    height: 8vh;
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+}
+
+#pictures {
+    display: flex;
+    flex: 1;
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+#releases {
+    background-color: gray;
+    display: flex;
+    flex: 1;
+    min-height: 50vh;
+}
+
+#social {
+    background-color: blue;
+    display: flex;
+    flex: 1;
+    min-height: 45vh;
+}
+
+.splash {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    border-style: solid;
+    border-color: lightblue;
+    border-width: 0px 0px 0.25vh 0px;
+}
+
+#logo {
+    display: flex;
+    max-height: 6vh;
+    max-width: auto;
+    margin: 1vh;
+}
+
+.navchild {
+    padding: 1.5vh 1vh 1vh 1vh;
+}
+
+#navmenu {
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 2vh;
+}
+
+.navoption {
+    font-size: 3vh;
+    margin-right: 5vh;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 4vh;
+}
