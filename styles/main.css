@@ -10,15 +10,92 @@
     margin: 0;
 }
 
+/* nunito-regular - latin */
+
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/nunito-v16-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/nunito-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/nunito-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/nunito-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/nunito-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/nunito-v16-latin-regular.svg#Nunito') format('svg');
+    /* Legacy iOS */
+}
+
+h1 {
+    font-size: 4vh;
+    z-index: 100;
+    color: aliceblue;
+    font-family: "Nunito";
+    font-weight: 1000;
+}
+
+.splash {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    border-style: solid;
+    border-color: lightblue;
+    border-width: 0px 0px 0.1vh 0px;
+}
+
+.navchild {
+    margin: 1.5vh 1vh 1vh 1vh;
+}
+
+.navoption {
+    display: flex;
+    font-size: 3vh;
+    margin-right: 5vh;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Nunito";
+    font-weight: 1000;
+}
+
+.legaltext {
+    font-family: "Nunito";
+    color: darkgray;
+    font-size: 0.9rem;
+    margin-top: 1.5vh;
+    margin-left: 1vh;
+}
+
 #page {
     display: flex;
     flex-direction: column;
     background-color: black;
-    position: absolute;
+    position: relative;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+}
+
+#legal {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100vw;
+    max-width: 100%;
+    height: 5vh;
+    position: absolute;
+    bottom: 0;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-top-width: 0.1vh;
+}
+
+#legalitems {
+    display: flex;
+    margin-left: 6vh;
 }
 
 #navbar {
@@ -31,11 +108,19 @@
     top: 0;
 }
 
+#navmenu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 2vh;
+    padding-bottom: auto;
+}
+
 #pictures {
     display: flex;
     flex: 1;
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 85vh;
+    max-height: 85vh;
 }
 
 #releases {
@@ -52,19 +137,6 @@
     min-height: 45vh;
 }
 
-.splash {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.container {
-    border-style: solid;
-    border-color: lightblue;
-    border-width: 0px 0px 0.25vh 0px;
-}
-
 #logo {
     display: flex;
     max-height: 6vh;
@@ -72,34 +144,8 @@
     margin: 1vh;
 }
 
-.navchild {
-    margin: 1.5vh 1vh 1vh 1vh;
-}
-
-#navmenu {
-    display: flex;
-    margin-left: auto;
-    margin-right: 0;
-    padding-top: 2vh;
-    padding-bottom: auto;
-}
-
-.navoption {
-    display: flex;
-    font-size: 3vh;
-    margin-right: 5vh;
-    text-decoration: none;
-    color: aliceblue;
-}
-
 #section {
     position: absolute;
     margin-top: 6vh;
     margin-left: 10vh;
-}
-
-h1 {
-    font-size: 4vh;
-    z-index: 100;
-    color: aliceblue;
 }
