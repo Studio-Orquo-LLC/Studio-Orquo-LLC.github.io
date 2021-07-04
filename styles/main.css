@@ -161,6 +161,11 @@ h1 {
 }
 
 @media (orientation: landscape) and (min-width: 481px) {
+    .dropoption {
+        max-width: 0;
+        max-height: 0;
+        margin: 0;
+    }
     #menu {
         max-width: 0;
         max-height: 0;

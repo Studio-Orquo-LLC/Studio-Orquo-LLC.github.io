@@ -19,12 +19,6 @@ class Menu extends React.Component {
     }
 }
 
-window.addEventListener("deviceorientation", handleOrientation, true);
-
-function handleOrientation() {
-    location.reload();
-}
-
 function toggle() {
     Menu.toggled = !Menu.toggled;
     ReactDOM.render(<Menu />, document.querySelector("#react-dropdown"));
