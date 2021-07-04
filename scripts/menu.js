@@ -19,14 +19,19 @@ class Menu extends React.Component {
     }
 }
 
-window.addEventListener("deviceorientation", handleOrientation, true);
+window.addEventListener("deviceorientation", function (event) {
+    var rotateDegrees = event.alpha;
+    handleOrientationEvent(rotateDegrees);
+}, true);
 
-function handleOrientation() {
-    if(Menu.toggled) {
+function handleOrientationEvent(rotateDegrees) {
+    if (rotateDegrees == 90 && Menu.toggled) {
         Menu.toggled = false;
         location.reload();
     }
 }
+
+
 
 function toggle() {
     Menu.toggled = !Menu.toggled;
