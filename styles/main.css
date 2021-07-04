@@ -160,7 +160,7 @@ h1 {
     margin-left: 10vh;
 }
 
-@media screen and (orientation: landscape) and (min-width: 481px) {
+@media (orientation: landscape) and (min-width: 481px) {
     #menu {
         max-width: 0;
         max-height: 0;
@@ -168,7 +168,7 @@ h1 {
     }
 }
 
-@media screen and (orientation: portrait), (max-width: 480px) {
+@media (orientation: portrait), (max-width: 480px) {
     #logo {
         margin-top: 2.5vh;
         min-height: 8vh;
