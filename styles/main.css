@@ -166,51 +166,67 @@ h1 {
         max-height: 0;
         margin: 0;
     }
+    #dropdown {
+        max-width: 0;
+        max-height: 0;
+        margin: 0;
+    }
 }
 
 @media (orientation: portrait), (max-width: 480px) {
+    .navoption {
+        font-size: 0;
+        max-height: 0;
+        max-width: 0;
+    }
+    .dropoption {
+        justify-self: center;
+        font-family: "Nunito";
+        font-weight: 1000;
+        font-size: 3vh;
+        color: aliceblue;
+        margin: 1vh;
+    }
     #logo {
         margin-top: 2.5vh;
         min-height: 8vh;
     }
-
     #company {
         position: relative;
         margin-bottom: 2.5vh;
         margin-top: auto;
         margin-right: 0;
     }
-
+    #dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.69);
+        padding: 1vh;
+        min-width: 10vw;
+        min-height: 100vh;
+        top: 12.1vh;
+        right: 0;
+    }
     #menu {
         position: relative;
         margin: 5.25vh 5vh 3vh auto;
     }
-
     #navbar {
         min-height: 12vh;
         max-width: 100vw;
     }
-
     #legalitems {
         margin-left: 2vh;
     }
-
     #section {
         margin-left: 10vw;
     }
-
-    .navoption {
-        font-size: 0;
-        max-height: 0;
-        max-width: 0;
-    }
-
     #navchild {
         max-width: 0;
         max-height: 0;
         margin: 0;
     }
-
     #navmenu {
         max-width: 0;
         max-height: 0;

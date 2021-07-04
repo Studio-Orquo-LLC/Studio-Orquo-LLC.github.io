@@ -8,6 +8,13 @@
     <meta name="description" content="TODO: DESCRIPTION">
     <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Load React. -->
+    <script src="https://unpkg.com/@babel/standalone@7.14.7/babel.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script type="text/babel" src="scripts/menu.js"></script>
 </head>
 
 <body>
@@ -31,7 +38,8 @@
                 <a href="about.html" class="navoption">About</a>
                 <a href="devlogs.html" class="navoption">Devlogs</a>
             </div>
-            <img src="images/menu_button.png" id="menu">
+            <input type="image" src="images/menu_button.png" onclick="toggle()" id="menu">
+            <div id="react-dropdown"></div>
         </div>
         <div id="legal">
             <div id="legalitems">
