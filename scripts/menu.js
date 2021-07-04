@@ -2,8 +2,8 @@ class Menu extends React.Component {
     static toggled = false;
 
     render() {
-        if(!Menu.toggled)
-            return(
+        if (!Menu.toggled)
+            return (
                 <>
                 </>
             )
@@ -17,6 +17,12 @@ class Menu extends React.Component {
             </>
         )
     }
+}
+
+window.addEventListener("deviceorientation", handleOrientation, true);
+
+function handleOrientation() {
+    location.reload();
 }
 
 function toggle() {
