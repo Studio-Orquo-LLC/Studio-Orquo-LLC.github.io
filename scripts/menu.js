@@ -27,7 +27,7 @@ window.addEventListener("deviceorientation", function (event) {
 function handleOrientationEvent(rotateDegrees) {
     if (rotateDegrees == 90 && Menu.toggled) {
         Menu.toggled = false;
-        location.reload();
+        ReactDOM.render(<Menu />, document.querySelector("#react-dropdown"));
     }
 }
 
