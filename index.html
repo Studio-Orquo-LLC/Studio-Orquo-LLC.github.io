@@ -9,26 +9,33 @@
     <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <!-- Load React. -->
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.14.7/babel.min.js" crossorigin></script>
     <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
 
     <!-- Load our React component. -->
     <script type="text/babel" src="scripts/menu.js"></script>
+    <script type="text/babel" src="scripts/splash.js"></script>
 </head>
 
 <body>
     <div id="page">
         <div id="pictures" class="container">
-            <img src="images/testimage.jpg" class="splash">
+            <div id="react-splash"></div>
+            <input type="image" src="images/left_arrow.svg" id="left-arrow" onclick="left()">
+            <input type="image" src="images/left_arrow.svg" id="right-arrow" onclick="right()">
         </div>
         <div id="releases" class="container">
             <h1 id="section">Upcoming Releases</h1>
-            <!-- <img src="images/testimage2.jpg" class="splash"> -->
+            <img src="images/testreleasesbg.jpg" class="splash">
+            <img src="images/release1.png" id="release1">
+            <img src="images/release2.png" id="release2">
         </div>
         <div id="social" class="container">
             <h1 id="section">Join the community</h1>
-            <!-- <img src="images/testimage3.jpg" class="splash"> -->
+            <img src="images/testsocialbg.jpg" class="splash">
+            <a href="https://discord.gg/xTcJZ7zmgB"><img src="images/join_discord.png" id="discord-button"></a>
         </div>
         <div id="navbar" class="container">
             <img src="images/logo.png" id="logo">

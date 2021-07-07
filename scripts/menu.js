@@ -20,22 +20,6 @@ class Menu extends React.Component {
     }
 }
 
-window.addEventListener("deviceorientation", function (event) {
-    var rotateDegrees = event.alpha;
-    handleOrientationEvent(rotateDegrees);
-}, true);
-
-function handleOrientationEvent(rotateDegrees) {
-    if (Math.abs(Menu.lastAngle - rotateDegrees) > 45 && Menu.toggled) {
-        Menu.toggled = false;
-        Menu.lastAngle = rotateDegrees;
-        ReactDOM.render(<Menu />, document.querySelector("#react-dropdown"));
-        location.reload();
-    }
-}
-
-
-
 function toggle() {
     Menu.toggled = !Menu.toggled;
     ReactDOM.render(<Menu />, document.querySelector("#react-dropdown"));

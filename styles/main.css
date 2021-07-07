@@ -46,6 +46,87 @@ h1 {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
+}
+
+#release1 {
+    position: absolute;
+    max-height: 35vh;
+    max-width: auto;
+    margin-top: 12vh;
+    margin-left: 40vh;
+}
+
+#release2 {
+    position: absolute;
+    max-height: 35vh;
+    max-width: auto;
+    margin-top: 12vh;
+    margin-left: 10vh;
+}
+
+#bg {
+    height: 100%;
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
+}
+
+#discord-button {
+    position: absolute;
+    left: 5vw;
+    right: auto;
+    bottom: 15vh;
+    top: auto;
+    max-width: 20vw;
+    max-height: 20vh;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .container {
@@ -127,6 +208,7 @@ h1 {
 }
 
 #pictures {
+    position: relative;
     display: flex;
     flex: 1;
     min-height: 85vh;
@@ -134,10 +216,12 @@ h1 {
 }
 
 #releases {
+    position: relative;
     background-color: black;
     display: flex;
     flex: 1;
     min-height: 50vh;
+    max-height: 50vh;
 }
 
 #social {
@@ -145,6 +229,7 @@ h1 {
     display: flex;
     flex: 1;
     min-height: 45vh;
+    max-height: 45vh;
 }
 
 #logo {
@@ -160,11 +245,47 @@ h1 {
     margin-left: 10vh;
 }
 
+#left-arrow {
+    position: absolute;
+    min-width: 5vw;
+    min-height: 5vh;
+    margin-top: 35vh;
+    margin-bottom: auto;
+}
+
+#right-arrow {
+    position: absolute;
+    min-width: 5vw;
+    min-height: 5vh;
+    margin-top: 35vh;
+    margin-bottom: auto;
+    transform: rotate(180deg);
+    margin-right: 0;
+    margin-left: 94.5vw;
+}
+
+@media (max-width: 999px) {
+    #left-arrow {
+        visibility: hidden;
+        max-width: 0;
+        max-height: 0;
+        margin: 0;
+    }
+    #right-arrow {
+        visibility: hidden;
+        max-width: 0;
+        max-height: 0;
+        margin: 0;
+    }
+}
+
 @media (orientation: landscape) and (min-width: 481px) {
     .dropoption {
         max-width: 0;
         max-height: 0;
         margin: 0;
+        visibility: hidden;
+        left: -1000vw;
     }
     #menu {
         max-width: 0;
