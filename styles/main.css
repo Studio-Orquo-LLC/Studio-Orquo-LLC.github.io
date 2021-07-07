@@ -49,6 +49,14 @@ h1 {
     overflow: hidden;
 }
 
+#video {
+    position: absolute;
+    margin-top: 15vh;
+    margin-bottom: auto;
+    margin-left: 19vw;
+    margin-right: auto;
+}
+
 #release1 {
     position: absolute;
     max-height: 35vh;

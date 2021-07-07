@@ -18,16 +18,29 @@
 
 <body>
     <div id="page">
+        <iframe id="video" width="1200" height="800" src="https://www.youtube.com/embed/0GudfptusXM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </iframe>
+        <img src="images/devlogbg.jpg" class="splash">
         <div id="navbar" class="container">
             <img src="images/logo.png" id="logo">
             <h1 class="navchild" id="company">Studio Orquo</h1>
             <div id="navmenu">
                 <a href="index.html" class="navoption">Home</a>
-                <a href="about.html" class="navoption">About</a>
+                <!-- <a href="about.html" class="navoption">About</a> -->
                 <a href="devlogs.html" class="navoption">Devlogs</a>
             </div>
             <input type="image" src="images/menu_button.png" onclick="toggle()" id="menu">
             <div id="react-dropdown"></div>
+        </div>
+        <div id="legal">
+            <div id="legalitems">
+                <a href="http://tinyurl.com/orquo-privacy" class="legaltext">Privacy</a>
+                <a href="http://tinyurl.com/orquo-terms" class="legaltext">Terms and Conditions</a>
+                <div id="copyright" class="legaltext">© Studio Orquo LLC 2021 all rights reserved</div>
+            </div>
         </div>
     </div>
 </body>
