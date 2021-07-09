@@ -1,5 +1,6 @@
 class Splash extends React.Component {
     static idx = 0;
+    static delay = 5000;
     getId = () => {
         const id = shortid.generate();
         console.log(id);
@@ -35,18 +36,18 @@ class Splash extends React.Component {
 }
 
 ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
-tid = window.setTimeout(right, 5000);
+var tid = window.setTimeout(right, Splash.delay);
 
 function left() {
     Splash.idx--;
     ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
     window.clearInterval(tid);
-    tid = window.setTimeout(right, 10000);
+    this.tid = window.setTimeout(right, Splash.delay);
 }
 
 function right() {
     Splash.idx++;
     ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
     window.clearInterval(tid);
-    tid = window.setTimeout(right, 10000);
+    this.tid = window.setTimeout(right, Splash.delay);
 }

@@ -401,7 +401,7 @@ h1 {
     }
     #discord-button {
         position: absolute;
-        left: 5vw;
+        left: 10vw;
         right: auto;
         bottom: 15vh;
         top: auto;
