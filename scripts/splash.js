@@ -36,18 +36,27 @@ class Splash extends React.Component {
 }
 
 ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
-var tid = window.setTimeout(right, Splash.delay);
+var tid = window.setTimeout(right, Splash.delay)
+var pid = window.setTimeout(progress, Splash.delay / 120)
+
+function progress() {
+    ProgressBar.setValue(ProgressBar.value + 1)
+    window.clearInterval(pid)
+    this.pid = window.setTimeout(progress, Splash.delay / 120)
+}
 
 function left() {
+    ProgressBar.setValue(0)
     Splash.idx--;
-    ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
-    window.clearInterval(tid);
-    this.tid = window.setTimeout(right, Splash.delay);
+    ReactDOM.render(<Splash />, document.querySelector("#react-splash"))
+    window.clearInterval(tid)
+    this.tid = window.setTimeout(right, Splash.delay)
 }
 
 function right() {
+    ProgressBar.setValue(0)
     Splash.idx++;
-    ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
+    ReactDOM.render(<Splash />, document.querySelector("#react-splash"))
     window.clearInterval(tid);
-    this.tid = window.setTimeout(right, Splash.delay);
+    this.tid = window.setTimeout(right, Splash.delay)
 }

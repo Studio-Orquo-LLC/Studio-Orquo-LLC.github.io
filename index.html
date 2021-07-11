@@ -17,18 +17,22 @@
     <!-- Load our React component. -->
     <script type="text/babel" src="scripts/menu.js"></script>
     <script type="text/babel" src="scripts/splash.js"></script>
+    <script type="text/babel" src="scripts/progress.js"></script>
 </head>
 
 <body>
     <div id="page">
         <div id="pictures" class="container">
             <div id="react-splash"></div>
+            <div id="progress-container">
+                <div id="react-progress"></div>
+            </div>
             <input type="image" src="images/left_arrow.svg" id="left-arrow" onclick="left()">
             <input type="image" src="images/left_arrow.svg" id="right-arrow" onclick="right()">
         </div>
         <div id="releases" class="container">
             <h1 id="section">Upcoming Releases</h1>
-            <img src="images/testreleasesbg.jpg" class="splash">
+            <img src="images/testreleasesbg.png" class="splash">
             <!-- <img src="images/release1.png" id="release1"> -->
             <img src="images/release2.png" id="release2">
         </div>
