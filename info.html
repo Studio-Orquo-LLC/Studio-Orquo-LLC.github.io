@@ -3,44 +3,39 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Orquo</title>
-    <meta name="description" content="We are an independent indie game studio based in California on a mission to create amazing games with charming visuals.">
+    <meta name="description" content="TODO: DESCRIPTION">
     <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <!-- Load React. -->
-    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.14.7/babel.min.js" crossorigin></script>
     <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
 
     <!-- Load our React component. -->
     <script type="text/babel" src="scripts/menu.js"></script>
-    <script type="text/babel" src="scripts/splash.js"></script>
 </head>
 
 <body>
     <div id="page">
-        <div id="pictures" class="container">
-            <div id="react-splash"></div>
-            <div id="progress-container">
-               <div id="progress-1" class="progress-elem"></div>
-               <div id="progress-2" class="progress-elem"></div>
-               <div id="progress-3" class="progress-elem"></div>
+        <a id="about"></a>
+        <div id="about-us" class="container">
+            <h1 id="about-title">Our<br>Story</h1>
+            <p id="about-text">We are an independent game developer, based in California, with a love of
+                charming pixel art and a mission to create fun and replayable games.
+                <br><br>
+                Studio Orquo was founded by Zhenda
+                Hu and Anakin Trotter, who started off working from their garage, in order to channel their passion for
+                gaming towards bringing their ideas to life.
+            </p>
+            <img src="images/testaboutbg.jpg" class="splash">
+        </div>
+        <a id="jobs"></a>
+        <div id="job-openings" class="container">
+            <div class="job-button">
+                <a class="apply-link" href="https://forms.gle/kwBvSFUt79qenoEY8">Apply Now</a>
             </div>
-            <input type="image" src="images/left_arrow.svg" id="left-arrow" onclick="left()">
-            <input type="image" src="images/left_arrow.svg" id="right-arrow" onclick="right()">
-        </div>
-        <div id="releases" class="container">
-            <h1 id="section">Upcoming Releases</h1>
-            <img src="images/testreleasesbg.png" class="splash">
-            <!-- <img src="images/release1.png" id="release1"> -->
-            <img src="images/release2.png" id="release2">
-        </div>
-        <div id="social" class="container">
-            <h1 id="section">Join the community</h1>
-            <img src="images/testsocialbg.jpg" class="splash">
-            <a href="https://discord.gg/xTcJZ7zmgB"><img src="images/join_discord.png" id="discord-button"></a>
+            <img src="images/testjobbg.jpg" id="job-bg" class="splash">
         </div>
         <div id="navbar" class="container">
             <img src="images/logo.png" id="logo">
@@ -63,5 +58,3 @@
         </div>
     </div>
 </body>
-
-</html>

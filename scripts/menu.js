@@ -12,7 +12,8 @@ class Menu extends React.Component {
             <>
                 <div id="dropdown">
                     <a href="index.html" class="dropoption">Home</a>
-                    {/* <a href="about.html" class="dropoption">About</a> */}
+                    <a href="info.html#about" class="dropoption">About</a>
+                    <a href="info.html#jobs" class="dropoption">Jobs</a>
                     <a href="devlogs.html" class="dropoption">Devlogs</a>
                 </div>
             </>
