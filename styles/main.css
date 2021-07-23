@@ -408,10 +408,11 @@ h1 {
         position: absolute;
         top: 30vh;
         left: 4vw;
-        font-size: 5vh;
+        font-size: 4vh;
     }
     #about-text {
-        top: 12.25vh;
+        top: 18vh;
+        font-size: 2vh;
     }
     .job-button {
         width: 21.5vw;
