@@ -45,20 +45,20 @@ class Splash extends React.Component {
 }
 
 ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
-var tid = window.setTimeout(right, Splash.delay)
+// var tid = window.setTimeout(right, Splash.delay)
 
 function left() {
     Splash.idx--;
     ReactDOM.render(<Splash />, document.querySelector("#react-splash"))
     window.clearInterval(tid)
-    this.tid = window.setTimeout(right, Splash.delay)
+    // this.tid = window.setTimeout(right, Splash.delay)
 }
 
 function right() {
     Splash.idx++;
     ReactDOM.render(<Splash />, document.querySelector("#react-splash"))
     window.clearInterval(tid);
-    this.tid = window.setTimeout(right, Splash.delay)
+    // this.tid = window.setTimeout(right, Splash.delay)
 }
 
 let pageWidth = window.innerWidth || document.body.clientWidth;
