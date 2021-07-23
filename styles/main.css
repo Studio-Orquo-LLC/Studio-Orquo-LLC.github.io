@@ -109,6 +109,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .apply-link {
@@ -442,19 +443,6 @@ h1 {
         top: 18vh;
         font-size: 2vh;
     }
-    /* .job-button {
-        position: absolute;
-        background-color: #4c54bf;
-        border-radius: 0.5rem;
-        left: 2vw;
-        bottom: 10vh;
-        top: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 21.5vw;
-        bottom: 25vh;
-    } */
     .navoption {
         font-size: 0;
         max-height: 0;
