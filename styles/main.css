@@ -109,7 +109,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
 }
 
 .apply-link {
@@ -118,6 +117,7 @@ h1 {
     font-size: 2vh;
     font-family: "Nunito";
     color: white;
+    margin: 5px;
 }
 
 #about-splash {
