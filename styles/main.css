@@ -99,7 +99,7 @@ h1 {
 .job-button {
     position: absolute;
     background-color: #4c54bf;
-    border-radius: 0.5rem;
+    border-radius: 1vw;
     width: 20%;
     min-width: fit-content;
     height: 5vh;
@@ -109,6 +109,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2vh;
 }
 
 .apply-link {
@@ -117,7 +118,6 @@ h1 {
     font-size: 2vh;
     font-family: "Nunito";
     color: white;
-    margin: 5px;
 }
 
 #about-splash {
@@ -126,7 +126,7 @@ h1 {
 
 .splash {
     height: auto;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     object-position: center;
     overflow: hidden;
@@ -167,16 +167,16 @@ h1 {
 
 #release1 {
     position: absolute;
-    max-height: 35vh;
-    max-width: auto;
+    height: 35vh;
+    width: auto;
     margin-top: 12vh;
     margin-left: 40vh;
 }
 
 #release2 {
     position: absolute;
-    max-height: 35vh;
-    max-width: auto;
+    height: 35vh;
+    width: auto;
     margin-top: 12vh;
     margin-left: 10vh;
 }
@@ -193,7 +193,7 @@ h1 {
 
 #biglogo {
     position: absolute;
-    max-width: 90%;
+    width: 75vw;
     max-height: auto;
     animation: fadeIn linear 2s;
     -webkit-animation: fadeIn linear 2s;
@@ -208,8 +208,8 @@ h1 {
     right: auto;
     bottom: 15vh;
     top: auto;
-    max-width: 20vw;
-    max-height: 20vh;
+    width: 25vw;
+    height: 15vh;
 }
 
 @keyframes fadeIn {
