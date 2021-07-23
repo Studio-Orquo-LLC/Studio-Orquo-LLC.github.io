@@ -70,28 +70,57 @@ h1 {
 }
 
 #job-bg {
-    max-height: 100%;
+    height: 100%;
+}
+
+#join-text {
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    color: white;
+}
+
+#position-text {
+    position: absolute;
+    margin-top: 14vh;
+    margin-left: 2vw;
+    font-size: 3vh;
+}
+
+#position-desc {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 2vw;
+    font-family: "Nunito";
+    font-size: 2vh;
+    color: white;
 }
 
 .job-button {
     position: absolute;
     background-color: #4c54bf;
     border-radius: 0.5rem;
-    width: 10vw;
+    width: 20%;
+    min-width: fit-content;
     height: 5vh;
-    bottom: 10vh;
     left: 2vw;
+    bottom: 10vh;
+    top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .apply-link {
-    position: absolute;
-    left: 2vw;
-    top: 1vh;
     font-weight: 1000;
     text-decoration: none;
     font-size: 2vh;
     font-family: "Nunito";
     color: white;
+}
+
+#about-splash {
+    height: 100%;
 }
 
 .splash {
@@ -126,9 +155,8 @@ h1 {
   } */
 
 #dev-bg {
-    background-image: url("../images/devlogbg.jpg");
+    background-image: url("../images/testdevlogbg.png");
     background-size: contain;
-    background-repeat: repeat-y;
     height: 100vh;
 }
 
@@ -414,10 +442,19 @@ h1 {
         top: 18vh;
         font-size: 2vh;
     }
-    .job-button {
+    /* .job-button {
+        position: absolute;
+        background-color: #4c54bf;
+        border-radius: 0.5rem;
+        left: 2vw;
+        bottom: 10vh;
+        top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 21.5vw;
         bottom: 25vh;
-    }
+    } */
     .navoption {
         font-size: 0;
         max-height: 0;
