@@ -22,8 +22,10 @@ class Splash extends React.Component {
             case 0:
                 p1.style.backgroundColor = "CornflowerBlue"
                 return (
-                    
+                        <>
+                        <img src="images/biglogo.png" id="biglogo" key={this.getId()}></img>
                         <img src="images/testimage.jpg" id="bg" class="splash" key={this.getId()}></img>
+                        </>
                     
                 )
             case 1:
@@ -50,14 +52,14 @@ ReactDOM.render(<Splash />, document.querySelector("#react-splash"));
 function left() {
     Splash.idx--;
     ReactDOM.render(<Splash />, document.querySelector("#react-splash"))
-    window.clearInterval(tid)
+    // window.clearInterval(tid)
     // this.tid = window.setTimeout(right, Splash.delay)
 }
 
 function right() {
     Splash.idx++;
     ReactDOM.render(<Splash />, document.querySelector("#react-splash"))
-    window.clearInterval(tid);
+    // window.clearInterval(tid);
     // this.tid = window.setTimeout(right, Splash.delay)
 }
 

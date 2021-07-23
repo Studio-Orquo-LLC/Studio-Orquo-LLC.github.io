@@ -149,12 +149,6 @@ h1 {
     border-radius: 100%;
 }
 
-/* * {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-  } */
-
 #dev-bg {
     background-image: url("../images/testdevlogbg.png");
     background-size: contain;
@@ -189,6 +183,18 @@ h1 {
 
 #bg {
     height: 100%;
+}
+
+#react-splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#biglogo {
+    position: absolute;
+    max-width: 90%;
+    max-height: auto;
     animation: fadeIn linear 2s;
     -webkit-animation: fadeIn linear 2s;
     -moz-animation: fadeIn linear 2s;
@@ -248,6 +254,51 @@ h1 {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: translate(1920px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes animationFrames {
+    0% {
+        -moz-transform: translate(1920px, 0px);
+    }
+    100% {
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes animationFrames {
+    0% {
+        -webkit-transform: translate(1920px, 0px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-o-keyframes animationFrames {
+    0% {
+        -o-transform: translate(1920px, 0px);
+    }
+    100% {
+        -o-transform: translate(0px, 0px);
+    }
+}
+
+@-ms-keyframes animationFrames {
+    0% {
+        -ms-transform: translate(1920px, 0px);
+    }
+    100% {
+        -ms-transform: translate(0px, 0px);
     }
 }
 
