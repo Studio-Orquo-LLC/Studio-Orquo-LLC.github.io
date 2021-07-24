@@ -61,6 +61,59 @@ h1 {
     margin-left: 1vw;
 }
 
+#donate-button {
+    position: absolute;
+    max-width: 15vw;
+    max-height: auto;
+    left: 42vw;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
+#contact-button {
+    position: absolute;
+    max-width: 15vw;
+    max-height: auto;
+    left: 42vw;
+    top: 60vh;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
+#donate-text {
+    position: absolute;
+    max-width: fit-content;
+    max-height: auto;
+    font-size: 6vh;
+    top: 20vh;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
+#contact-logo {
+    color: white;
+    position: absolute;
+    max-width: 40vw;
+    max-height: auto;
+    font-size: 6vh;
+    left: 38vw;
+    top: 10vh;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
 #about-us {
     height: 100vh;
 }
