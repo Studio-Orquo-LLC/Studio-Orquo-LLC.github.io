@@ -31,7 +31,7 @@ class Splash extends React.Component {
             case 1:
                 p2.style.backgroundColor = "CornflowerBlue"
                 return (
-                    <>
+                    <>:
                         <a href="https://gofund.me/3e6cf322"><img src="images/donate.png" id="donate-button" key={this.getId()}></img></a>
                         <h1 id="donate-text" key={this.getId()}>Support us on GoFundMe:</h1>
                         <img src="images/testimage2.jpg" id="bg" class="splash" key={this.getId()}></img>
@@ -42,7 +42,7 @@ class Splash extends React.Component {
                 return (
                     <>
                         <a href = "mailto: studio.orquo@gmail.com"><img src="images/contact-us.png" id="contact-button" key={this.getId()}></img></a>
-                        {/* <img src="images/logo.png" id="contact-logo" key={this.getId()}></img> */}
+                        <h1 id="contact-text" key={this.getId()}>Have questions or ideas?</h1>
                         <img src="images/testimage3.jpg" id="bg" class="splash" key={this.getId()}></img>
                     </>
                 )

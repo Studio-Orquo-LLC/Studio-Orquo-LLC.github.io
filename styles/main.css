@@ -63,9 +63,10 @@ h1 {
 
 #donate-button {
     position: absolute;
-    max-width: 15vw;
+    min-width: 20vw;
+    max-width: 25vw;
     max-height: auto;
-    left: 42vw;
+    left: 38vw;
     animation: fadeIn linear 2s;
     -webkit-animation: fadeIn linear 2s;
     -moz-animation: fadeIn linear 2s;
@@ -74,11 +75,13 @@ h1 {
 }
 
 #contact-button {
+    min-width: 20vw;
+    max-width: 25vw;
     position: absolute;
     max-width: 15vw;
     max-height: auto;
-    left: 42vw;
-    top: 60vh;
+    left: 40vw;
+    top: 45vh;
     animation: fadeIn linear 2s;
     -webkit-animation: fadeIn linear 2s;
     -moz-animation: fadeIn linear 2s;
@@ -99,14 +102,14 @@ h1 {
     -ms-animation: fadeIn linear 2s;
 }
 
-#contact-logo {
-    color: white;
+#contact-text {
+    background-color: #4BACC5;
+    border-radius: 1vh;
     position: absolute;
-    max-width: 40vw;
+    max-width: fit-content;
     max-height: auto;
     font-size: 6vh;
-    left: 38vw;
-    top: 10vh;
+    top: 20vh;
     animation: fadeIn linear 2s;
     -webkit-animation: fadeIn linear 2s;
     -moz-animation: fadeIn linear 2s;
