@@ -239,6 +239,7 @@ h1 {
 
 #bg {
     height: 100%;
+    max-width: 100%;
 }
 
 #react-splash {
@@ -435,6 +436,7 @@ h1 {
     margin-right: 0;
     padding-top: 2vh;
     padding-bottom: auto;
+    z-index: 100;
 }
 
 #pictures {
@@ -531,15 +533,42 @@ h1 {
         max-height: 0;
         margin: 0;
         left: -10000px;
+        z-index: 100;
     }
     #dropdown {
         max-width: 0;
         max-height: 0;
         margin: 0;
+        z-index: 100;
     }
 }
 
 @media (orientation: portrait), (max-width: 480px) {
+    #contact-button {
+        min-width: 35vw;
+        max-width: 45vw;
+        position: absolute;
+        max-width: 15vw;
+        max-height: auto;
+        left: 36vw;
+        top: 45vh;
+        animation: fadeIn linear 2s;
+        -webkit-animation: fadeIn linear 2s;
+        -moz-animation: fadeIn linear 2s;
+        -o-animation: fadeIn linear 2s;
+        -ms-animation: fadeIn linear 2s;
+    }
+    
+    #contact-text {
+        position: absolute;
+        font-size: 3.5vh;
+        top: 20vh;
+        animation: fadeIn linear 2s;
+        -webkit-animation: fadeIn linear 2s;
+        -moz-animation: fadeIn linear 2s;
+        -o-animation: fadeIn linear 2s;
+        -ms-animation: fadeIn linear 2s;
+    }
     #about-title {
         position: absolute;
         top: 30vh;
@@ -583,6 +612,7 @@ h1 {
         max-height: 200%;
         top: 12.1vh;
         right: 0;
+        z-index: 100;
     }
     #menu {
         position: relative;
@@ -623,7 +653,7 @@ h1 {
         right: auto;
         bottom: 15vh;
         top: auto;
-        max-width: 40vw;
-        max-height: 40vh;
+        width: 50vw;
+        height: auto;
     }
 }
