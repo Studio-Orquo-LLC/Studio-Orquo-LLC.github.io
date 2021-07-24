@@ -263,10 +263,10 @@ h1 {
     position: absolute;
     left: 5vw;
     right: auto;
-    bottom: 15vh;
+    bottom: 10vh;
     top: auto;
-    width: 25vw;
-    height: 15vh;
+    max-width: 30vw;
+    height: auto;
 }
 
 @keyframes fadeIn {
@@ -653,7 +653,8 @@ h1 {
         right: auto;
         bottom: 15vh;
         top: auto;
-        width: 50vw;
+        max-width: 60vw;
+        width: auto;
         height: auto;
     }
 }
